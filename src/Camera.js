@@ -12,8 +12,12 @@ class Camera extends Component {
 
     render() {
         return (
-            <Scene arjs="sourceType: webcam;">
-                <Entity geometry={{primitive: 'box'}} material={{color: 'red'}} position={{x: 0, y: 0.5, z: 0}}/>
+            <Scene arjs='sourceType: webcam;'>
+                <Entity geometry={{primitive: 'box'}} material={{color: 'red'}} position={{x: 0, y: 0, z: 0}}/>
+                <Entity>
+                    <a-animation attribute="rotation" easing="linear" dur="1000" to="0 360 0" repeat="indefinite"/>
+                    <Entity gltf-model="url(/models/FidgetSpinner.gltf)" position={{x: 0, y: 0, z: 0}} rotation="90 0 0"/>
+                </Entity>
                 <a-marker-camera preset="hiro"/>
             </Scene>
         );
