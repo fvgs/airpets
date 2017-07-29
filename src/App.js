@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Camera from './Camera.js';
 
-import logo from './logo.svg';
 import './App.css';
 import Home from './Home'
 
