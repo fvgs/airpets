@@ -4,6 +4,9 @@ import Camera from './Camera.js';
 import './App.css';
 import Home from './Home'
 
+const styles = {
+	height: '100vh',
+}
 
 class App extends Component {
     constructor(props) {
@@ -16,11 +19,14 @@ class App extends Component {
 	}
 
   render() {
-    if (this.state.page === "home") {
-			return <Home changePage={this.changePage}/>
-    } else if (this.state.page === 'camera') {
-			return <Camera/>
-		}
+		const {page} = this.state
+
+		return (
+			<div style={styles}>
+				{page === 'home' && <Home changePage={this.changePage}/>}
+				{page === 'camera' && <Camera/>}
+			</div>
+		)
   }
 }
 
