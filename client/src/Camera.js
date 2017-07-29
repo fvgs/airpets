@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import 'aframe';
 import {Entity, Scene} from 'aframe-react';
+import {Vector3} from 'three';
 
 class Camera extends Component {
     componentWillMount() {
@@ -12,10 +13,21 @@ class Camera extends Component {
 
     render() {
         return (
-            <Scene arjs='sourceType: webcam;'>
+            <Scene arjs='sourceType: webcam;' events={{
+                "child-attached": () => {
+                    if (document.querySelector("a-scene").camera) {
+                        setInterval(() => {
+                            const worldPos = new Vector3();
+                            worldPos.setFromMatrixPosition(document.querySelector("a-scene").camera.matrixWorld);
+                            console.log(worldPos);
+                        }, 20);
+                    }
+                }
+            }}>
                 <Entity>
                     <a-animation attribute="rotation" easing="linear" dur="1000" to="0 360 0" repeat="indefinite"/>
-                    <Entity gltf-model="url(/models/FidgetSpinner.gltf)" position={{x: 0, y: 0, z: 0}} rotation="90 0 0" scale="0.25 0.25 0.25"/>
+                    <Entity id="spinner" gltf-model="url(/models/FidgetSpinner.gltf)" position={{x: 0, y: 0, z: 0}}
+                            rotation="90 0 0" scale="0.25 0.25 0.25"/>
                 </Entity>
                 <a-marker-camera preset="hiro"/>
             </Scene>
