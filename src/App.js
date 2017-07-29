@@ -3,28 +3,18 @@ import Camera from './Camera.js';
 
 import logo from './logo.svg';
 import './App.css';
-import startBackgroundGradient from './startBackgroundGradient'
+import Home from './Home'
 
 
 class App extends Component {
     constructor(props) {
         super(props);
-        this.state = {page: "index"};
+        this.state = {page: "home"};
     }
-  componentDidMount() {
-    startBackgroundGradient();
-  }
 
   render() {
-    if (this.state.page === "index") {
-        return (
-          <div style={{height: '100vh'}} className="main">
-            <p>
-                Index
-            </p>
-            <a onClick={() => this.setState({page: "camera"})}> Camera </a>
-          </div>
-        );
+    if (this.state.page === "home") {
+			return <Home/>
     }
     return (
       <Camera/>
