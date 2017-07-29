@@ -1,0 +1,737 @@
+{
+    "accessors": {
+        "accessors_0": {
+            "bufferView": "bufferViews_2",
+            "byteOffset": 0,
+            "byteStride": 2,
+            "componentType": 5123,
+            "count": 768,
+            "max": [
+                19061
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        "accessors_1": {
+            "bufferView": "bufferViews_0",
+            "byteOffset": 24,
+            "byteStride": 52,
+            "componentType": 5126,
+            "count": 19273,
+            "max": [
+                0.9999305009841919,
+                0.9925134056247771
+            ],
+            "min": [
+                6.955399294383824e-05,
+                0.005820572376251221
+            ],
+            "type": "VEC2"
+        },
+        "accessors_10": {
+            "bufferView": "bufferViews_0",
+            "byteOffset": 0,
+            "byteStride": 52,
+            "componentType": 5126,
+            "count": 19273,
+            "max": [
+                0.029527010396122932,
+                0.024723291397094727,
+                0.23940406739711761
+            ],
+            "min": [
+                -0.04832702502608299,
+                -0.02472270280122757,
+                -0.09830617904663086
+            ],
+            "type": "VEC3"
+        },
+        "accessors_11": {
+            "bufferView": "bufferViews_7",
+            "byteOffset": 0,
+            "byteStride": 2,
+            "componentType": 5123,
+            "count": 1104,
+            "max": [
+                19111
+            ],
+            "min": [
+                30
+            ],
+            "type": "SCALAR"
+        },
+        "accessors_12": {
+            "bufferView": "bufferViews_1",
+            "byteOffset": 0,
+            "byteStride": 2,
+            "componentType": 5123,
+            "count": 12072,
+            "max": [
+                19267
+            ],
+            "min": [
+                11
+            ],
+            "type": "SCALAR"
+        },
+        "accessors_2": {
+            "bufferView": "bufferViews_3",
+            "byteOffset": 0,
+            "byteStride": 2,
+            "componentType": 5123,
+            "count": 408,
+            "max": [
+                18734
+            ],
+            "min": [
+                758
+            ],
+            "type": "SCALAR"
+        },
+        "accessors_3": {
+            "bufferView": "bufferViews_8",
+            "byteOffset": 0,
+            "byteStride": 2,
+            "componentType": 5123,
+            "count": 5838,
+            "max": [
+                19264
+            ],
+            "min": [
+                20
+            ],
+            "type": "SCALAR"
+        },
+        "accessors_4": {
+            "bufferView": "bufferViews_4",
+            "byteOffset": 0,
+            "byteStride": 2,
+            "componentType": 5123,
+            "count": 63750,
+            "max": [
+                19271
+            ],
+            "min": [
+                1
+            ],
+            "type": "SCALAR"
+        },
+        "accessors_5": {
+            "bufferView": "bufferViews_0",
+            "byteOffset": 32,
+            "byteStride": 52,
+            "componentType": 5126,
+            "count": 19273,
+            "max": [
+                0.9956128001213074,
+                1.0
+            ],
+            "min": [
+                0.0,
+                0.005820572376251221
+            ],
+            "type": "VEC2"
+        },
+        "accessors_6": {
+            "bufferView": "bufferViews_5",
+            "byteOffset": 0,
+            "byteStride": 2,
+            "componentType": 5123,
+            "count": 96,
+            "max": [
+                18282
+            ],
+            "min": [
+                34
+            ],
+            "type": "SCALAR"
+        },
+        "accessors_7": {
+            "bufferView": "bufferViews_6",
+            "byteOffset": 0,
+            "byteStride": 2,
+            "componentType": 5123,
+            "count": 10368,
+            "max": [
+                19272
+            ],
+            "min": [
+                6
+            ],
+            "type": "SCALAR"
+        },
+        "accessors_8": {
+            "bufferView": "bufferViews_0",
+            "byteOffset": 40,
+            "byteStride": 52,
+            "componentType": 5126,
+            "count": 19273,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "VEC3"
+        },
+        "accessors_9": {
+            "bufferView": "bufferViews_0",
+            "byteOffset": 12,
+            "byteStride": 52,
+            "componentType": 5126,
+            "count": 19273,
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type": "VEC3"
+        }
+    },
+    "asset": {
+        "profile": {
+            "api": "WebGL",
+            "version": "1.0.3"
+        },
+        "version": "1.0"
+    },
+    "bufferViews": {
+        "bufferViews_0": {
+            "buffer": "buffers_0",
+            "byteLength": 1002196,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        "bufferViews_1": {
+            "buffer": "buffers_0",
+            "byteLength": 24144,
+            "byteOffset": 1002196,
+            "target": 34963
+        },
+        "bufferViews_2": {
+            "buffer": "buffers_0",
+            "byteLength": 1536,
+            "byteOffset": 1026340,
+            "target": 34963
+        },
+        "bufferViews_3": {
+            "buffer": "buffers_0",
+            "byteLength": 816,
+            "byteOffset": 1027876,
+            "target": 34963
+        },
+        "bufferViews_4": {
+            "buffer": "buffers_0",
+            "byteLength": 127500,
+            "byteOffset": 1028692,
+            "target": 34963
+        },
+        "bufferViews_5": {
+            "buffer": "buffers_0",
+            "byteLength": 192,
+            "byteOffset": 1156192,
+            "target": 34963
+        },
+        "bufferViews_6": {
+            "buffer": "buffers_0",
+            "byteLength": 20736,
+            "byteOffset": 1156384,
+            "target": 34963
+        },
+        "bufferViews_7": {
+            "buffer": "buffers_0",
+            "byteLength": 2208,
+            "byteOffset": 1177120,
+            "target": 34963
+        },
+        "bufferViews_8": {
+            "buffer": "buffers_0",
+            "byteLength": 11676,
+            "byteOffset": 1179328,
+            "target": 34963
+        }
+    },
+    "buffers": {
+        "buffers_0": {
+            "byteLength": 1191004,
+            "type": "arraybuffer",
+            "uri": "buffer_combined.bin"
+        }
+    },
+    "extensions": {
+        "KHR_materials_common": {
+            "lights": {}
+        }
+    },
+    "extensionsUsed": [
+        "KHR_materials_common"
+    ],
+    "glExtensionsUsed": [],
+    "materials": {
+        "materials_0": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "PHONG",
+                    "values": {
+                        "ambient": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "diffuse": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "doubleSided": false,
+                        "emission": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1.0
+                        ],
+                        "transparency": 1.0,
+                        "transparent": false
+                    }
+                }
+            },
+            "name": "Plastic-base"
+        },
+        "materials_1": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "PHONG",
+                    "values": {
+                        "ambient": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "diffuse": [
+                            0.64000004529953,
+                            0.64000004529953,
+                            0.64000004529953,
+                            1.0
+                        ],
+                        "doubleSided": false,
+                        "emission": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1.0
+                        ],
+                        "transparency": 1.0,
+                        "transparent": false
+                    }
+                }
+            },
+            "name": "Display"
+        },
+        "materials_2": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "PHONG",
+                    "values": {
+                        "ambient": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "diffuse": [
+                            0.64000004529953,
+                            0.64000004529953,
+                            0.64000004529953,
+                            1.0
+                        ],
+                        "doubleSided": false,
+                        "emission": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1.0
+                        ],
+                        "transparency": 1.0,
+                        "transparent": false
+                    }
+                }
+            },
+            "name": "Nokia-logo-front"
+        },
+        "materials_3": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "PHONG",
+                    "values": {
+                        "ambient": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "diffuse": [
+                            0.64000004529953,
+                            0.64000004529953,
+                            0.64000004529953,
+                            1.0
+                        ],
+                        "doubleSided": false,
+                        "emission": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1.0
+                        ],
+                        "transparency": 1.0,
+                        "transparent": false
+                    }
+                }
+            },
+            "name": "Buttons"
+        },
+        "materials_4": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "PHONG",
+                    "values": {
+                        "ambient": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "diffuse": [
+                            0.64000004529953,
+                            0.64000004529953,
+                            0.64000004529953,
+                            1.0
+                        ],
+                        "doubleSided": false,
+                        "emission": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1.0
+                        ],
+                        "transparency": 1.0,
+                        "transparent": false
+                    }
+                }
+            },
+            "name": "Display-inner-coners"
+        },
+        "materials_5": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "PHONG",
+                    "values": {
+                        "ambient": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "diffuse": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "doubleSided": false,
+                        "emission": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1.0
+                        ],
+                        "transparency": 1.0,
+                        "transparent": false
+                    }
+                }
+            },
+            "name": "Plastic-sides"
+        },
+        "materials_6": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "PHONG",
+                    "values": {
+                        "ambient": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "diffuse": [
+                            0.800000011920929,
+                            0.800000011920929,
+                            0.800000011920929,
+                            1.0
+                        ],
+                        "doubleSided": false,
+                        "emission": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1.0
+                        ],
+                        "transparency": 1.0,
+                        "transparent": false
+                    }
+                }
+            },
+            "name": "Plastic-Antena"
+        },
+        "materials_7": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "technique": "PHONG",
+                    "values": {
+                        "ambient": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "diffuse": [
+                            0.64000004529953,
+                            0.64000004529953,
+                            0.64000004529953,
+                            1.0
+                        ],
+                        "doubleSided": false,
+                        "emission": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1.0
+                        ],
+                        "transparency": 1.0,
+                        "transparent": false
+                    }
+                }
+            },
+            "name": "BackLIghtDisplay"
+        }
+    },
+    "meshes": {
+        "meshes_0": {
+            "name": "Plane",
+            "primitives": [
+                {
+                    "attributes": {
+                        "COLOR_0": "accessors_8",
+                        "NORMAL": "accessors_9",
+                        "POSITION": "accessors_10",
+                        "TEXCOORD_0": "accessors_1",
+                        "TEXCOORD_1": "accessors_5"
+                    },
+                    "indices": "accessors_12",
+                    "material": "materials_6",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "COLOR_0": "accessors_8",
+                        "NORMAL": "accessors_9",
+                        "POSITION": "accessors_10",
+                        "TEXCOORD_0": "accessors_1",
+                        "TEXCOORD_1": "accessors_5"
+                    },
+                    "indices": "accessors_0",
+                    "material": "materials_4",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "COLOR_0": "accessors_8",
+                        "NORMAL": "accessors_9",
+                        "POSITION": "accessors_10",
+                        "TEXCOORD_0": "accessors_1",
+                        "TEXCOORD_1": "accessors_5"
+                    },
+                    "indices": "accessors_2",
+                    "material": "materials_2",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "COLOR_0": "accessors_8",
+                        "NORMAL": "accessors_9",
+                        "POSITION": "accessors_10",
+                        "TEXCOORD_0": "accessors_1",
+                        "TEXCOORD_1": "accessors_5"
+                    },
+                    "indices": "accessors_4",
+                    "material": "materials_0",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "COLOR_0": "accessors_8",
+                        "NORMAL": "accessors_9",
+                        "POSITION": "accessors_10",
+                        "TEXCOORD_0": "accessors_1",
+                        "TEXCOORD_1": "accessors_5"
+                    },
+                    "indices": "accessors_6",
+                    "material": "materials_7",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "COLOR_0": "accessors_8",
+                        "NORMAL": "accessors_9",
+                        "POSITION": "accessors_10",
+                        "TEXCOORD_0": "accessors_1",
+                        "TEXCOORD_1": "accessors_5"
+                    },
+                    "indices": "accessors_7",
+                    "material": "materials_3",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "COLOR_0": "accessors_8",
+                        "NORMAL": "accessors_9",
+                        "POSITION": "accessors_10",
+                        "TEXCOORD_0": "accessors_1",
+                        "TEXCOORD_1": "accessors_5"
+                    },
+                    "indices": "accessors_11",
+                    "material": "materials_1",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "COLOR_0": "accessors_8",
+                        "NORMAL": "accessors_9",
+                        "POSITION": "accessors_10",
+                        "TEXCOORD_0": "accessors_1",
+                        "TEXCOORD_1": "accessors_5"
+                    },
+                    "indices": "accessors_3",
+                    "material": "materials_5",
+                    "mode": 4
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "nodes_0": {
+            "children": [],
+            "meshes": [
+                "meshes_0"
+            ],
+            "name": "Phone",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -7.450580596923828e-09
+            ]
+        }
+    },
+    "samplers": {
+        "samplers_0": {}
+    },
+    "scene": "scenes_0",
+    "scenes": {
+        "scenes_0": {
+            "extras": {
+                "active_camera": null,
+                "background_color": [
+                    0.05,
+                    0.05,
+                    0.05
+                ],
+                "frames_per_second": 30,
+                "meshlint_check_sixplus_poles": 1
+            },
+            "name": "Scene",
+            "nodes": [
+                "nodes_0"
+            ]
+        }
+    }
+}
