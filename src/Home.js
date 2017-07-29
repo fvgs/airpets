@@ -14,7 +14,7 @@ class Home extends Component {
 				<p>
 						Index
 				</p>
-				<a onClick={() => this.setState({page: "camera"})}> Camera </a>
+				<a onClick={() => this.props.changePage('camera')}> Camera </a>
 			</div>
 		)
 	}

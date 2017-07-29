@@ -12,13 +12,16 @@ class App extends Component {
         this.state = {page: "home"};
     }
 
+	changePage = (page) => {
+		this.setState({page});
+	}
+
   render() {
     if (this.state.page === "home") {
-			return <Home/>
-    }
-    return (
-      <Camera/>
-    );
+			return <Home changePage={this.changePage}/>
+    } else if (this.state.page === 'camera') {
+			return <Camera/>
+		}
   }
 }
 
