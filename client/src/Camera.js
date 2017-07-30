@@ -20,8 +20,6 @@ class Camera extends Component {
 
     render() {
         const {socket, objects = []} = this.props;
-        console.log(objects);
-
         const items = [].concat(Object.values(objects).map(({name}) =>
             [<a-asset-item id={name + '-obj'}
                            src={'/models/' + name + '-obj/' + name + '.obj'}/>,

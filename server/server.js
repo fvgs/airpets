@@ -1,5 +1,5 @@
 const socketIO = require('socket.io');
-const { figures } = require('./figures');
+const {figures} = require('./figures');
 
 const PORT = 4000;
 const io = socketIO(PORT);
@@ -32,8 +32,8 @@ io.on('connect', (socket) => {
 setInterval(() => {
     Object.values(objects.alpha).forEach(({position}) => {
         Object.keys(position).forEach(dimension => {
-            position[dimension] += Math.random() - 0.5
+            position[dimension] += (Math.random() - 0.5) / 100.0;
         })
     });
-    io.to('alpha').emit('update objects', objects.alpha)
-}, 1000);
+    io.to('alpha').emit('update objects', objects.alpha);
+}, 10);
