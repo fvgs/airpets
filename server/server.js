@@ -31,13 +31,16 @@ io.on('connect', (socket) => {
         console.log('disconnected');
     });
 
-    // socket.on('position update', (msg) => {
-    // 	console.log(msg);
-    // })
+    socket.on('join room', socket.join);
 
-    socket.on('join room', (room) => {
-        socket.join(room)
-    })
+    socket.on('call', pos => {
+        Object.values(objects.alpha).forEach(({position}) => {
+            Object.keys(position).forEach(dimension => {
+                position[dimension] = (pos[dimension] - position[dimension]) / 10.0;
+            })
+        });
+        io.to('alpha').emit('update objects', objects.alpha);
+    });
 });
 
 setInterval(() => {

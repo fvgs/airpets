@@ -16,7 +16,7 @@ class App extends Component {
         super(props);
         this.socket = io('localhost:4000');
         this.socket.emit('join room', 'alpha');
-        this.socket.on('update objects', (objects) => {
+        this.socket.on('update objects', objects => {
             console.log('received', objects);
             this.setState({objects})
         })
