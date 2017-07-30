@@ -25,7 +25,6 @@ module.exports = {
         'dog2': {name: 'dog', position: {x: 0, y: 0, z: 0}, scale: 0.0001, rotation: {x: 0, y: 0, z: 0}},
         'giraffe': {name: 'giraffe', position: {x: 0, y: 0, z: 0}, scale: 0.01, rotation: {x: 0, y: 0, z: 0}},
 
-
         'condor': {name: 'condor', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
         'dove': {name: 'dove', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
         'goose': {name: 'goose', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
@@ -81,7 +80,16 @@ module.exports = {
         'grass-plant-34': {name: 'grass-plant', position: {x: 2, y: -1.5, z: -0.5}, scale: 0.025, rotation: {x: 0, y: 0, z: 0}},
         'rock-1': {name: 'rock', position: {x: -1, y: -1.5, z: 0}, scale: 0.05, rotation: {x: 0, y: 0, z: 0}},
         'rock-2': {name: 'rock', position: {x: 0.25, y: -1.5, z: 0}, scale: 0.05, rotation: {x: 0, y: 0, z: 0}},
-        'rock-3': {name: 'rock', position: {x: 1.5, y: -1.5, z: 0}, scale: 0.05, rotation: {x: 0, y: 0, z: 0}}
+        'rock-3': {name: 'rock', position: {x: 1.5, y: -1.5, z: 0}, scale: 0.05, rotation: {x: 0, y: 0, z: 0}},
+        'raven-1': {name: 'raven', position: {x: 0, y: 0.3, z: 0}, scale: 0.1, rotation: {x: 0, y: 90, z: 0}},
+        'rabbit-1': {name: 'rabbit', position: {x: -1, y: -1.4, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'rabbit-2': {name: 'rabbit', position: {x: 1.3, y: -1.4, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'rabbit-3': {name: 'rabbit', position: {x: 0.25, y: -1.4, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'goose-1': {name: 'goose', position: {x: -1, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'zebra-1': {name: 'zebra', position: {x: -1.5, y: -1.7, z: 0}, scale: 0.0012, rotation: {x: 0, y: 0, z: 0}},
+        'dog-1': {name: 'dog', position: {x: 1.5, y: -1.45, z: 0}, scale: 0.0001, rotation: {x: 0, y: 0, z: 0}},
+        'lion-cub-1': {name: 'lion-cub', position: {x: 1, y: -1.3, z: 0}, scale: 0.03, rotation: {x: 0, y: 90, z: 0}}
+
 
     }
 };

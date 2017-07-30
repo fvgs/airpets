@@ -19,7 +19,8 @@ const objects = {
         'grass-plant-22', 'grass-plant-23', 'grass-plant-24', 'grass-plant-25',
         'grass-plant-26', 'grass-plant-27', 'grass-plant-28', 'grass-plant-29',
         'grass-plant-30', 'grass-plant-31', 'grass-plant-32', 'grass-plant-33',
-        'grass-plant-34', 'rock-1', 'rock-2', 'rock-3')
+        'grass-plant-34', 'rock-1', 'rock-2', 'rock-3', 'raven-1', 'rabbit-1',
+        'rabbit-2', 'rabbit-3', 'goose-1', 'zebra-1', 'lion-cub-1', 'dog-1')
 };
 
 io.on('connect', (socket) => {
