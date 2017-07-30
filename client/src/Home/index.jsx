@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import Main from './Main';
 import CreateWorld from './CreateWorld';
+import SelectPet from './SelectPet';
 import startBackgroundGradient from '../startBackgroundGradient'
 
 const styles = {
@@ -41,7 +42,7 @@ class Home extends Component {
 	}
 
 	render() {
-		const {changePage} = this.props;
+		const {changePage, setPet} = this.props;
 
 		return (
 			<div style={styles} className="main">
@@ -57,6 +58,9 @@ class Home extends Component {
 							handleChange={this.handleChange}
 						/>
 				}
+			{
+				this.state.view === 'selectPet' && <SelectPet setPet={setPet}/>
+			}
 			</div>
 		)
 	}

@@ -10,9 +10,10 @@ const styles = {
 };
 
 class App extends Component {
+		state = {page: 'home', pet: null};
+
     constructor(props) {
         super(props);
-        this.state = {page: "home"};
         this.socket = io('localhost:4000');
         this.socket.emit('join room', 'alpha');
         this.socket.on('update objects', (objects) => {
@@ -25,13 +26,27 @@ class App extends Component {
         this.setState({page});
     };
 
+		setPet = (petName) => {
+			this.setState({pet: petName});
+		}
+
     render() {
         const {page} = this.state;
 
         return (
             <div style={styles}>
-                {page === 'home' && <Home socket={this.socket} changePage={this.changePage}/>}
-                {page === 'camera' && <Camera objects={this.state.objects} socket={this.socket}/>}
+                {
+									page === 'home' &&
+										<Home
+											socket={this.socket}
+											changePage={this.changePage}
+											setPet={this.setPet}
+										/>
+								}
+                {
+									page === 'camera' &&
+										<Camera objects={this.state.objects} socket={this.socket}/>
+								}
             </div>
         )
     }
