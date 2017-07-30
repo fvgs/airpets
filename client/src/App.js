@@ -14,6 +14,11 @@ class App extends Component {
       super(props);
       this.state = {page: "home"};
       this.socket = io('localhost:4000')
+      this.socket.emit('join room', 'alpha')
+      this.socket.on('update objects', (objects) => {
+        console.log('received', objects);
+        this.setState({objects}) 
+      })
     }
 
   changePage = (page) => {
@@ -26,7 +31,7 @@ class App extends Component {
     return (
       <div style={styles}>
         {page === 'home' && <Home changePage={this.changePage}/>}
-        {page === 'camera' && <Camera socket={this.socket}/>}
+        {page === 'camera' && <Camera objects={this.state.objects} socket={this.socket}/>}
       </div>
     )
   }
