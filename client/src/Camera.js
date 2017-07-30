@@ -19,29 +19,58 @@ class Camera extends Component {
     }
 
     render() {
-      const {socket} = this.props
+        const {socket} = this.props;
+        const figures = [
+            //{name: 'eggman', position: {x: 0, y: 0, z: 0}, scale: "0.01 0.01 0.01"},
+            //{name: 'untitled-scene', position: {x: 0, y: 0, z: 0}, scale: "0.01 0.01 0.01"},
+            //{name: 'dragons-attack', position: {x: 0, y: 0, z: 0}, scale: "0.001 0.001 0.001"},
+            //{name: 'flowey-the-flower', position: {x: 0, y: 0, z: 0}, scale: "0.01 0.01 0.01"},
+            //{name: 'mountain', position: {x: 0, y: 0, z: 0}, scale: "0.01 0.01 0.01"},
+            //{name: 'grass-plant', position: {x: 0, y: 0, z: 0}, scale: "0.1 0.1 0.1"},
+            //{name: 'coconut-tree', position: {x: 0, y: 0, z: 0}, scale: "0.001 0.001 0.001"},
+            //{name: 'tree-05', position: {x: 0, y: 0, z: 0}, scale: "0.01 0.01 0.01"},
+        ];
 
-      return (
-          <Scene arjs='sourceType: webcam;' events={{
-              "child-attached": () => {
-                  if (!this.state.attached && document.querySelector("a-scene").camera) {
-                      setInterval(() => {
-                          const worldPos = new Vector3();
-                          worldPos.setFromMatrixPosition(document.querySelector("a-scene").camera.matrixWorld);
-                          socket.emit('position update', worldPos)
-                      }, DURATION_MS);
-                      this.setState({attached: true});
-                  }
-              }
-          }}>
-              <Entity>
-                  <a-animation attribute="rotation" easing="linear" dur="1000" to="0 360 0" repeat="indefinite"/>
-                  <Entity id="spinner" gltf-model="url(/models/FidgetSpinner.gltf)" position={{x: 0, y: 0, z: 0}}
-                          rotation="90 0 0" scale="0.25 0.25 0.25"/>
-              </Entity>
-              <a-marker-camera preset="hiro"/>
-          </Scene>
-      );
+        const animals = [
+            //{name: 'lion-cub', position: {x: 0, y: 0, z: 0}, scale: "0.05 0.05 0.05"},
+            //{name: 'zebra', position: {x: 0, y: 0, z: 0}, scale: "0.001 0.001 0.001"},
+            //{name: 'raven', position: {x: 0, y: 0, z: 0}, scale: "0.1 0.1 0.1"},
+            //{name: 'rabbit', position: {x: 0, y: 0, z: 0}, scale: "0.1 0.1 0.1"},
+            //{name: 'dog', position: {x: 0, y: 0, z: 0}, scale: "0.0001 0.0001 0.0001"}
+        ];
+
+        const elements = figures.concat(animals);
+
+        const items = [].concat(elements.map(({name}) =>
+            [<a-asset-item id={name + '-obj'}
+                           src={'/models/' + name + '-obj/' + name + '.obj'}/>,
+                <a-asset-item id={name + '-mtl'}
+                              src={'/models/' + name + '-obj/' + name + '.mtl'}/>]));
+        return (
+            <Scene arjs='sourceType: webcam;' events={{
+                "child-attached": () => {
+                    if (!this.state.attached && document.querySelector("a-scene").camera) {
+                        setInterval(() => {
+                            const worldPos = new Vector3();
+                            worldPos.setFromMatrixPosition(document.querySelector("a-scene").camera.matrixWorld);
+                            socket.emit('position update', worldPos)
+                        }, DURATION_MS);
+                        this.setState({attached: true});
+                    }
+                }
+            }}>
+                <a-assets>
+                    {items}
+                </a-assets>
+                {elements.map(({name, position, scale}) =>
+                    <Entity obj-model={'obj: #' + name + '-obj; mtl: #' + name + '-mtl'}
+                            position={position}
+                            scale={scale}
+                            key={name}/>
+                )}
+                <a-marker-camera preset="hiro"/>
+            </Scene>
+        );
     }
 }
 
