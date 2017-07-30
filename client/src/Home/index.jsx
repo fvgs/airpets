@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {Button} from 'semantic-ui-react';
-import {Form, Input} from 'semantic-ui-react';
 
+import Main from './Main';
+import CreateWorld from './CreateWorld';
 import startBackgroundGradient from '../startBackgroundGradient'
 
 const styles = {
@@ -17,14 +17,6 @@ const titleStyles = {
 	fontSize: '8rem',
 	marginBottom: '8rem',
 	fontFamily: 'Voltaire, sans-serif',
-};
-
-const buttonStyles = {
-	margin: '0.7rem',
-};
-
-const buttonContainerStyles = {
-	display: 'flex',
 };
 
 class Home extends Component {
@@ -54,26 +46,17 @@ class Home extends Component {
 		return (
 			<div style={styles} className="main">
 				<div style={titleStyles}>Airpets</div>
-			{
-				this.state.view === 'main' &&
-					<div style={buttonContainerStyles}>
-						<Button secondary style={buttonStyles} size="big" onClick={() => {changePage('camera');}}>JOIN WORLD</Button>
-						<Button primary style={buttonStyles} size="big" onClick={() => {this.changeView('createWorld');}}>CREATE WORLD</Button>
-					</div>
-			}
-			{
-				this.state.view === 'createWorld' &&
-					<div>
-						<Form onSubmit={this.createWorld}>
-							<Input
-								size="large"
-								action={<Button primary type="submit">CREATE WORLD</Button>}
-								placeholder="Name for your world..."
-								onChange={this.handleChange}
-							/>
-						</Form>
-					</div>
-			}
+				{
+					this.state.view === 'main' &&
+						<Main changePage={changePage} changeView={this.changeView}/>
+				}
+				{
+					this.state.view === 'createWorld' &&
+						<CreateWorld
+							createWorld={this.createWorld}
+							handleChange={this.handleChange}
+						/>
+				}
 			</div>
 		)
 	}
