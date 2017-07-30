@@ -21,6 +21,12 @@ module.exports = {
         'rabbit': {name: 'rabbit', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
         'dog': {name: 'dog', position: {x: 0, y: 0, z: 0}, scale: 0.0001, rotation: {x: 0, y: 0, z: 0}},
         'dog2': {name: 'dog', position: {x: 0, y: 0, z: 0}, scale: 0.0001, rotation: {x: 0, y: 0, z: 0}},
-        'giraffe': {name: 'giraffe', position: {x: 0, y: 0, z: 0}, scale: 0.01, rotation: {x: 0, y: 0, z: 0}}
+        'giraffe': {name: 'giraffe', position: {x: 0, y: 0, z: 0}, scale: 0.01, rotation: {x: 0, y: 0, z: 0}},
+        'condor': {name: 'condor', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'dove': {name: 'dove', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'goose': {name: 'goose', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'gull': {name: 'gull', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'humbird': {name: 'humbird', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'penguin': {name: 'penguin', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}}
     }
 };
