@@ -22,7 +22,7 @@ class Camera extends Component {
         const {socket, objects = []} = this.props;
         console.log(objects);
 
-        const items = [].concat(Object.keys(objects).map(name =>
+        const items = [].concat(Object.values(objects).map(({name}) =>
             [<a-asset-item id={name + '-obj'}
                            src={'/models/' + name + '-obj/' + name + '.obj'}/>,
                 <a-asset-item id={name + '-mtl'}
@@ -43,12 +43,12 @@ class Camera extends Component {
                 <a-assets>
                     {items}
                 </a-assets>
-                {Object.keys(objects).map(name => {
-                        const {position, scale, rotation} = objects[name];
+                {Object.keys(objects).map(key => {
+                        const {name, position, scale, rotation} = objects[key];
                         return <Entity obj-model={'obj: #' + name + '-obj; mtl: #' + name + '-mtl'}
                                        position={position}
                                        scale={[scale, scale, scale].join(" ")}
-                                       key={name}
+                                       key={key}
                                        rotation={[rotation.x, rotation.y, rotation.z].join(" ")}/>
                     }
                 )}

@@ -9,7 +9,7 @@ function pick(o, ...props) {
 }
 
 const objects = {
-    alpha: pick(figures, 'raven', 'dog', 'lion-cub', 'zebra')
+    alpha: pick(figures, 'raven', 'dog', 'dog2', 'lion-cub', 'zebra')
 };
 
 io.on('connect', (socket) => {
