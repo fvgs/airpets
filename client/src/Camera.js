@@ -21,33 +21,33 @@ class Camera extends Component {
     render() {
         const {socket} = this.props;
         const figures = [
-            {name: 'eggman', position: {x: 0, y: 0, z: 0}, scale: 0.01},
-            {name: 'untitled-scene', position: {x: 0, y: 0, z: 0}, scale: 0.01},
-            {name: 'flowey-the-flower', position: {x: 0, y: 0, z: 0}, scale: 0.01},
-            {name: 'brittany-is-a-bitch', position: {x: 0, y: 0, z: 0}, scale: 1},
-            {name: 'animal-1', position: {x: 0, y: 0, z: 0}, scale: 1}
+            //{name: 'eggman', position: {x: 0, y: 0, z: 0}, scale: 0.01},
+            //{name: 'untitled-scene', position: {x: 0, y: 0, z: 0}, scale: 0.01},
+            //{name: 'flowey-the-flower', position: {x: 0, y: 0, z: 0}, scale: 0.01},
+            //{name: 'brittany-is-a-bitch', position: {x: 0, y: 0, z: 0}, scale: 1},
+            //{name: 'animal-1', position: {x: 0, y: 0, z: 0}, scale: 1}
         ];
 
         const nature = [
-            {name: 'mountain', position: {x: 0, y: 0, z: 0}, scale: 0.01},
-            {name: 'grass-plant', position: {x: 0, y: 0, z: 0}, scale: 0.1},
-            {name: 'coconut-tree', position: {x: 0, y: 0, z: 0}, scale: 0.001},
-            {name: 'tree-05', position: {x: 0, y: 0, z: 0}, scale: 0.01},
-            {name: 'tree-toon', position: {x: 0, y: 0, z: 0}, scale: 0.1},
-            {name: 'tree', position: {x: 0, y: 0, z: 0}, scale: 0.0001},
-            {name: 'tree-1-fixed-3', position: {x: 0, y: 0, z: 0}, scale: 0.01},
-            {name: 'rock', position: {x: 0, y: 0, z: 0}, scale: 0.01},
-            {name: 'candy-rocks', position: {x: 0, y: 0, z: 0}, scale: 0.1},
+            //{name: 'mountain', position: {x: 0, y: 0, z: 0}, scale: 0.01},
+            //{name: 'grass-plant', position: {x: 0, y: 0, z: 0}, scale: 0.1},
+            //{name: 'coconut-tree', position: {x: 0, y: 0, z: 0}, scale: 0.001},
+            //{name: 'tree-05', position: {x: 0, y: 0, z: 0}, scale: 0.01},
+            //{name: 'tree-toon', position: {x: 0, y: 0, z: 0}, scale: 0.1},
+            //{name: 'tree', position: {x: 0, y: 0, z: 0}, scale: 0.0001},
+            //{name: 'tree-1-fixed-3', position: {x: 0, y: 0, z: 0}, scale: 0.01},
+            //{name: 'rock', position: {x: 0, y: 0, z: 0}, scale: 0.01},
+            //{name: 'candy-rocks', position: {x: 0, y: 0, z: 0}, scale: 0.1},
         ];
 
         const animals = [
-            {name: 'dragons-attack', position: {x: 0, y: 0, z: 0}, scale: 0.001},
-            {name: 'lion-cub', position: {x: 0, y: 0, z: 0}, scale: 0.05},
-            {name: 'zebra', position: {x: 0, y: 0, z: 0}, scale: 0.001},
-            {name: 'raven', position: {x: 0, y: 0, z: 0}, scale: 0.1},
-            {name: 'rabbit', position: {x: 0, y: 0, z: 0}, scale: 0.1},
-            {name: 'dog', position: {x: 0, y: 0, z: 0}, scale: 0.0001},
-
+            //{name: 'dragons-attack', position: {x: 0, y: 0, z: 0}, scale: 0.001},
+            //{name: 'lion-cub', position: {x: 0, y: 0, z: 0}, scale: 0.05},
+            //{name: 'zebra', position: {x: 0, y: 0, z: 0}, scale: 0.001},
+            //{name: 'raven', position: {x: 0, y: 0, z: 0}, scale: 0.1},
+            //{name: 'rabbit', position: {x: 0, y: 0, z: 0}, scale: 0.1},
+            //{name: 'dog', position: {x: 0, y: 0, z: 0}, scale: 0.0001},
+            //{name: 'giraffe', position: {x: 0, y: 0, z: 0}, scale: 0.01}
         ];
 
         const elements = figures.concat(nature).concat(animals);
