@@ -3,7 +3,18 @@ import 'aframe';
 import {Entity, Scene} from 'aframe-react';
 import {Vector3} from 'three';
 
+const DURATION_MS = 20;
+
+function processPosition(pos) {
+    console.log(pos);
+}
+
 class Camera extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {attached: false};
+    }
+
     componentWillMount() {
         const script = document.createElement("script");
         script.src = "https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js";
@@ -15,12 +26,13 @@ class Camera extends Component {
         return (
             <Scene arjs='sourceType: webcam;' events={{
                 "child-attached": () => {
-                    if (document.querySelector("a-scene").camera) {
+                    if (!this.state.attached && document.querySelector("a-scene").camera) {
                         setInterval(() => {
                             const worldPos = new Vector3();
                             worldPos.setFromMatrixPosition(document.querySelector("a-scene").camera.matrixWorld);
-                            console.log(worldPos);
-                        }, 20);
+                            processPosition(worldPos);
+                        }, DURATION_MS);
+                        this.setState({attached: true});
                     }
                 }
             }}>
