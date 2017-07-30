@@ -3,7 +3,7 @@ import Camera from './Camera.js';
 import io from 'socket.io-client'
 
 import './App.css';
-import Home from './Home'
+import Home from './Home';
 
 const styles = {
     height: '100vh',
@@ -30,7 +30,7 @@ class App extends Component {
 
         return (
             <div style={styles}>
-                {page === 'home' && <Home changePage={this.changePage}/>}
+                {page === 'home' && <Home socket={this.socket} changePage={this.changePage}/>}
                 {page === 'camera' && <Camera objects={this.state.objects} socket={this.socket}/>}
             </div>
         )

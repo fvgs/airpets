@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Button} from 'semantic-ui-react';
+import {Form, Input} from 'semantic-ui-react';
 
 import startBackgroundGradient from '../startBackgroundGradient'
 
@@ -27,18 +28,52 @@ const buttonContainerStyles = {
 };
 
 class Home extends Component {
+	state = {view: 'main', worldName: ''}
+
   componentDidMount() {
     startBackgroundGradient();
   }
 
+	changeView = (view) => {
+		this.setState({view});
+	}
+
+	handleChange = (_, {value}) => {
+		this.setState({worldName: value});
+	}
+
+	createWorld = () => {
+		this.props.socket.emit('join room', this.state.worldName);
+		console.log('joined', this.state.worldName);
+		this.changeView('selectPet');
+	}
+
 	render() {
+		const {changePage} = this.props;
+
 		return (
 			<div style={styles} className="main">
 				<div style={titleStyles}>Airpets</div>
-				<div style={buttonContainerStyles}>
-					<Button secondary style={buttonStyles} size="big" onClick={() => this.props.changePage('camera')}>JOIN WORLD</Button>
-					<Button primary style={buttonStyles} size="big" onClick={() => {}}>CREATE WORLD</Button>
-			</div>
+			{
+				this.state.view === 'main' &&
+					<div style={buttonContainerStyles}>
+						<Button secondary style={buttonStyles} size="big" onClick={() => {changePage('camera');}}>JOIN WORLD</Button>
+						<Button primary style={buttonStyles} size="big" onClick={() => {this.changeView('createWorld');}}>CREATE WORLD</Button>
+					</div>
+			}
+			{
+				this.state.view === 'createWorld' &&
+					<div>
+						<Form onSubmit={this.createWorld}>
+							<Input
+								size="large"
+								action={<Button primary type="submit">CREATE WORLD</Button>}
+								placeholder="Name for your world..."
+								onChange={this.handleChange}
+							/>
+						</Form>
+					</div>
+			}
 			</div>
 		)
 	}

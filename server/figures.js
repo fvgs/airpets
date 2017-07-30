@@ -25,6 +25,14 @@ module.exports = {
         'dog2': {name: 'dog', position: {x: 0, y: 0, z: 0}, scale: 0.0001, rotation: {x: 0, y: 0, z: 0}},
         'giraffe': {name: 'giraffe', position: {x: 0, y: 0, z: 0}, scale: 0.01, rotation: {x: 0, y: 0, z: 0}},
 
+
+        'condor': {name: 'condor', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'dove': {name: 'dove', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'goose': {name: 'goose', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'gull': {name: 'gull', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'humbird': {name: 'humbird', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+        'penguin': {name: 'penguin', position: {x: 0, y: 0, z: 0}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
+
         //Start alpha room assets
         'tree-1': {name: 'tree-toon', position: {x: -2, y: -1.5, z: -1}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
         'tree-2': {name: 'tree-toon', position: {x: -1.5, y: -1.5, z: -1}, scale: 0.1, rotation: {x: 0, y: 0, z: 0}},
@@ -74,7 +82,6 @@ module.exports = {
         'rock-1': {name: 'rock', position: {x: -1, y: -1.5, z: 0}, scale: 0.05, rotation: {x: 0, y: 0, z: 0}},
         'rock-2': {name: 'rock', position: {x: 0.25, y: -1.5, z: 0}, scale: 0.05, rotation: {x: 0, y: 0, z: 0}},
         'rock-3': {name: 'rock', position: {x: 1.5, y: -1.5, z: 0}, scale: 0.05, rotation: {x: 0, y: 0, z: 0}}
-
 
     }
 };
