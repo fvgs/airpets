@@ -29,6 +29,12 @@ class Camera extends Component {
             //{name: 'grass-plant', position: {x: 0, y: 0, z: 0}, scale: "0.1 0.1 0.1"},
             //{name: 'coconut-tree', position: {x: 0, y: 0, z: 0}, scale: "0.001 0.001 0.001"},
             //{name: 'tree-05', position: {x: 0, y: 0, z: 0}, scale: "0.01 0.01 0.01"},
+            //{name: 'tree-toon', position: {x: 0, y: 0, z: 0}, scale: "0.1 0.1 0.1"},
+            //{name: 'brittany-is-a-bitch', position: {x: 0, y: 0, z: 0}, scale: "1 1 1"},
+            //{name: 'tree', position: {x: 0, y: 0, z: 0}, scale: "0.0001 0.0001 0.0001"},
+            //{name: 'tree-1-fixed-3', position: {x: 0, y: 0, z: 0}, scale: "0.01 0.01 0.01"},
+            //{name: 'rock', position: {x: 0, y: 0, z: 0}, scale: "0.01 0.01 0.01"},
+            //{name: 'candy-rocks', position: {x: 0, y: 0, z: 0}, scale: "0.1 0.1 0.1"},
         ];
 
         const animals = [
