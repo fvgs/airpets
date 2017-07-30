@@ -9,7 +9,17 @@ function pick(o, ...props) {
 }
 
 const objects = {
-    alpha: pick(figures, 'raven', 'dog', 'dog2', 'lion-cub', 'zebra')
+    alpha: pick(figures, 'tree-1', 'tree-2', 'tree-3', 'tree-4', 'tree-5',
+        'tree-6', 'tree-7', 'tree-8', 'tree-9', 'mountain-1', 'grass-plant-1',
+        'grass-plant-2', 'grass-plant-3', 'grass-plant-4', 'grass-plant-5',
+        'grass-plant-6', 'grass-plant-7', 'grass-plant-8', 'grass-plant-9',
+        'grass-plant-10', 'grass-plant-11', 'grass-plant-12', 'grass-plant-13',
+        'grass-plant-14', 'grass-plant-15', 'grass-plant-16', 'grass-plant-17',
+        'grass-plant-18', 'grass-plant-19', 'grass-plant-20', 'grass-plant-21',
+        'grass-plant-22', 'grass-plant-23', 'grass-plant-24', 'grass-plant-25',
+        'grass-plant-26', 'grass-plant-27', 'grass-plant-28', 'grass-plant-29',
+        'grass-plant-30', 'grass-plant-31', 'grass-plant-32', 'grass-plant-33',
+        'grass-plant-34', 'rock-1', 'rock-2', 'rock-3')
 };
 
 io.on('connect', (socket) => {
